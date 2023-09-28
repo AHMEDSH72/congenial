@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Age calculator app</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+        rel="stylesheet" />
+</head>
+<body>
+<main class="main">
+    <form class="form">
+        <div class="form-container">
+            <label class="label label-day" for="day">Day</label>
+            <input type="number" id="day" class="input-number" min="1" max="31" name="day" placeholder="DD">
+            <span class="error error-day">Must be a valid day</span>
+        </div>
+
+        <div class="form-container">
+            <label class="label label-month" for="month">Month</label>
+            <input type="number" id="month" class="input-number" min="1" max="12" name="month" placeholder="MM">
+            <span class=" error error-month">Must be a valid month</span>
+        </div>
+
+        <div class="form-container">
+            <label class="label label-year" for="year">Year</label>
+            <input type="number" id="year" class="input-number" name="year" placeholder="YYYY">
+            <span class=" error error-year">Must be in the past</span>
+        </div>
+    </form>
+
+    <div class="separating">
+        <span class="separating-line"></span>
+        <button class="separating-btn">
+            <img src="icon-arrow.svg" alt="Icon arrow" class="icon-arrow">
+        </button>
+    </div>
+
+    <section class="result">
+        <h2 class="result-header result-years"> <span class="result-span result-span-year">--</span>years</h2>
+        <h2 class="result-header result-months"> <span class="result-span result-span-month">--</span>months</h2>
+        <h2 class="result-header result-days"> <span class="result-span result-span-days">--</span>days</h2>
+    </section>
+
+</main>
+<!-- 
+<footer class="footer">
+    Challenge by
+    <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by
+    <a class="footer__link"
+        href="https://github.com/sylcym/frontend-mentor-challenges/tree/main/age-calculator-app-main"
+        target="_blank">sylcym</a>.
+</footer> -->
+
+        <script src="mine.js"></script>
+</body>
+</html>
